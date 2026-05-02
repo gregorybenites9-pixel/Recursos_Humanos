@@ -62,10 +62,100 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormCargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCargos.Designer.cs">
+      <DependentUpon>FormCargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormContratos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormContratos.Designer.cs">
+      <DependentUpon>FormContratos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormDistrito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDistrito.Designer.cs">
+      <DependentUpon>FormDistrito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormGestionarEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormGestionarEmpleados.Designer.cs">
+      <DependentUpon>FormGestionarEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormIntegrantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormIntegrantes.Designer.cs">
+      <DependentUpon>FormIntegrantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPagos.Designer.cs">
+      <DependentUpon>FormPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormProfesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormProfesion.Designer.cs">
+      <DependentUpon>FormProfesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormRoles.Designer.cs">
+      <DependentUpon>FormRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUsuarios.Designer.cs">
+      <DependentUpon>FormUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormVacaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormVacaciones.Designer.cs">
+      <DependentUpon>FormVacaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCargos.resx">
+      <DependentUpon>FormCargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormContratos.resx">
+      <DependentUpon>FormContratos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDistrito.resx">
+      <DependentUpon>FormDistrito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormGestionarEmpleados.resx">
+      <DependentUpon>FormGestionarEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormIntegrantes.resx">
+      <DependentUpon>FormIntegrantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPagos.resx">
+      <DependentUpon>FormPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormProfesion.resx">
+      <DependentUpon>FormProfesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormRoles.resx">
+      <DependentUpon>FormRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUsuarios.resx">
+      <DependentUpon>FormUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormVacaciones.resx">
+      <DependentUpon>FormVacaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -99,6 +189,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\descarga2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8e92c9be-6ed3-4107-9f4d-1407d2f35fcd-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8e92c9be-6ed3-4107-9f4d-1407d2f35fcd-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8e92c9be-6ed3-4107-9f4d-1407d2f35fcd-removebg-preview2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

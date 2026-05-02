@@ -17,15 +17,18 @@ namespace Menu_General1
         //Fields
         private int borderSize = 2;
         private Size formSize; //Keep form size when it is minimized and restored.Since the form is resized because it takes into account the size of the title bar and borders.
+        private Form currentChildForm;
+        private Control _lastClickedButton = null;
 
         //Constructor
         public Form1()
         {
             InitializeComponent();
             CollapseMenu();
-            this.Padding = new Padding(borderSize);//Border size
-            this.BackColor = Color.FromArgb(98, 102, 244);//Border color
+            this.Padding = new Padding(borderSize);
+            this.BackColor = Color.FromArgb(98, 102, 244);
         }
+
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -40,6 +43,14 @@ namespace Menu_General1
         private void Form1_Load(object sender, EventArgs e)
         {
             formSize = this.ClientSize;
+
+            // Establece el idioma español Perú
+            System.Threading.Thread.CurrentThread.CurrentCulture =
+                new System.Globalization.CultureInfo("es-PE");
+
+            timer1.Interval = 1000;
+            timer1.Start();
+            ActualizarReloj(); // muestra la hora inmediatamente sin esperar 1 segundo
         }
 
         //Overridden methods
@@ -130,6 +141,7 @@ namespace Menu_General1
         {
             AdjustForm();
         }
+
         private void btnMenu_Click(object sender, EventArgs e)
         {
             CollapseMenu();
@@ -201,20 +213,70 @@ namespace Menu_General1
 
         private void Open_DropdownMenu(RJDropdownMenu dropdownMenu, object sender)
         {
+            // Restaura el botón anterior
+            if (_lastClickedButton != null)
+                RestoreButtonColor(_lastClickedButton);
+
             Control control = (Control)sender;
-            dropdownMenu.VisibleChanged += new EventHandler((sender2, ev)
-                => DropdownMenu_VisibleChanged(sender2, ev, control));
+            _lastClickedButton = control;
+            SetActiveButtonColor(control);
+
             dropdownMenu.Show(control, control.Width, 0);
         }
 
-        private void DropdownMenu_VisibleChanged(object sender, EventArgs e, Control ctrl)
+        private void SetActiveButtonColor(Control control)
         {
-            RJDropdownMenu dropdownMenu = (RJDropdownMenu)sender;
-            if (!DesignMode)
+            control.BackColor = Color.FromArgb(159, 161, 224);
+            if (control is Button btn)
             {
-                if (dropdownMenu.Visible)
-                    ctrl.BackColor = Color.FromArgb(159, 161, 224);
-                else ctrl.BackColor = Color.FromArgb(98, 102, 244);
+                btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(159, 161, 224);
+                btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(159, 161, 224);
+            }
+        }
+
+        private void RestoreButtonColor(Control control)
+        {
+            control.BackColor = Color.FromArgb(31, 30, 68);
+            if (control is Button btn)
+            {
+                btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 30, 68);
+                btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(31, 30, 68);
+            }
+            control.Refresh();
+        }
+
+        private void ResetMenuButtons()
+        {
+            if (_lastClickedButton != null)
+            {
+                RestoreButtonColor(_lastClickedButton);
+                _lastClickedButton = null;
+            }
+        }
+
+        private void OpenChildForm(Form childForm)
+        {
+            if (currentChildForm != null)
+            {
+                //open only form
+                currentChildForm.Close();
+            }
+            currentChildForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelDesktop.Controls.Add(childForm);
+            panelDesktop.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void Reset()
+        {
+            if (currentChildForm != null)
+            {
+                currentChildForm.Close();
+                currentChildForm = null;
             }
         }
 
@@ -246,6 +308,87 @@ namespace Menu_General1
         private void iconButton8_Click(object sender, EventArgs e)
         {
             Open_DropdownMenu(rjDropdownMenu6, sender);
+        }
+
+        private void gestionarEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ResetMenuButtons();
+            OpenChildForm(new Forms.FormGestionarEmpleados());
+        }
+
+        private void contratosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ResetMenuButtons();
+            OpenChildForm(new Forms.FormContratos());
+        }
+
+        private void vacacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ResetMenuButtons();
+            OpenChildForm(new Forms.FormVacaciones());
+        }
+
+        private void pagosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ResetMenuButtons();
+            OpenChildForm(new Forms.FormPagos());
+        }
+
+        private void cargosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ResetMenuButtons();
+            OpenChildForm(new Forms.FormCargos());
+        }
+
+        private void distritoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ResetMenuButtons();
+            OpenChildForm(new Forms.FormDistrito());
+        }
+
+        private void profesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ResetMenuButtons();
+            OpenChildForm(new Forms.FormProfesion());
+        }
+
+        private void rolesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ResetMenuButtons();
+            OpenChildForm(new Forms.FormRoles());
+        }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ResetMenuButtons();
+            OpenChildForm(new Forms.FormUsuarios());
+        }
+
+        private void rjDropdownMenu5_Click(object sender, EventArgs e)
+        {
+            ResetMenuButtons();
+            OpenChildForm(new Forms.FormIntegrantes());
+        }
+
+        private void rjDropdownMenu6_Click(object sender, EventArgs e)
+        {
+            ResetMenuButtons();
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            Reset();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            ActualizarReloj();
+        }
+
+        private void ActualizarReloj()
+        {
+            lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
+            lblFecha.Text = DateTime.Now.ToString("dddd, MMMM dd, yyyy");
         }
     }
 }
