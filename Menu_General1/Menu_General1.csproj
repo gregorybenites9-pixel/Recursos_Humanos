@@ -182,21 +182,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\descarga.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\descarga1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\descarga2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\8e92c9be-6ed3-4107-9f4d-1407d2f35fcd-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\8e92c9be-6ed3-4107-9f4d-1407d2f35fcd-removebg-preview1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\8e92c9be-6ed3-4107-9f4d-1407d2f35fcd-removebg-preview2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
