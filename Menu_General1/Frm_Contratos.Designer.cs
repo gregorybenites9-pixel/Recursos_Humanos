@@ -37,27 +37,27 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.label11 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -81,6 +81,7 @@
             this.label10.TabIndex = 75;
             this.label10.Text = "                   GESTION DE CONTRATOS                                          " +
     "                           ";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // groupBox3
             // 
@@ -159,6 +160,40 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "FECHAS DEL CONTRATO";
             // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Location = new System.Drawing.Point(852, 37);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(213, 20);
+            this.dateTimePicker3.TabIndex = 68;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(718, 44);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(62, 13);
+            this.label11.TabIndex = 67;
+            this.label11.Text = "FECHA FIN";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(145, 38);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(213, 20);
+            this.dateTimePicker1.TabIndex = 66;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(11, 45);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(77, 13);
+            this.label8.TabIndex = 65;
+            this.label8.Text = "FECHA INICIO";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
             // menuStrip1
             // 
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -194,40 +229,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "IDENTIFICACION";
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(145, 38);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(213, 20);
-            this.dateTimePicker1.TabIndex = 66;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(11, 45);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(77, 13);
-            this.label8.TabIndex = 65;
-            this.label8.Text = "FECHA INICIO";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(852, 37);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(213, 20);
-            this.dateTimePicker3.TabIndex = 68;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(718, 44);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(62, 13);
-            this.label11.TabIndex = 67;
-            this.label11.Text = "FECHA FIN";
-            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.label7);
@@ -249,81 +250,24 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "RELACIONES ";
             // 
-            // comboBox2
+            // label7
             // 
-            this.comboBox2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(145, 29);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(216, 21);
-            this.comboBox2.TabIndex = 38;
-            this.comboBox2.Text = "<<Seleccione su Empleado>>";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(718, 110);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 13);
+            this.label7.TabIndex = 51;
+            this.label7.Text = "ESTADO";
             // 
-            // label3
+            // checkBox1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 13);
-            this.label3.TabIndex = 41;
-            this.label3.Text = "EMPLEADO";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(145, 61);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(216, 21);
-            this.comboBox1.TabIndex = 42;
-            this.comboBox1.Text = "<<Seleccione su Sede>>";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 61);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 13);
-            this.label1.TabIndex = 43;
-            this.label1.Text = "SEDE";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(145, 94);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(216, 21);
-            this.comboBox3.TabIndex = 44;
-            this.comboBox3.Text = "<<Seleccione su Tipo contrato>>";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 94);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 13);
-            this.label2.TabIndex = 45;
-            this.label2.Text = "TIPO CONTRATO";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(852, 29);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(216, 21);
-            this.comboBox4.TabIndex = 46;
-            this.comboBox4.Text = "<<Seleccione su Modalidad>>";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(718, 29);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 13);
-            this.label4.TabIndex = 47;
-            this.label4.Text = "MODALIDAD";
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(852, 110);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(56, 17);
+            this.checkBox1.TabIndex = 50;
+            this.checkBox1.Text = "Activo";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // comboBox5
             // 
@@ -345,24 +289,81 @@
             this.label5.Text = "CARGO";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // checkBox1
+            // comboBox4
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(852, 110);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(56, 17);
-            this.checkBox1.TabIndex = 50;
-            this.checkBox1.Text = "Activo";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.comboBox4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(852, 29);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(216, 21);
+            this.comboBox4.TabIndex = 46;
+            this.comboBox4.Text = "<<Seleccione su Modalidad>>";
             // 
-            // label7
+            // label4
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(718, 110);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 13);
-            this.label7.TabIndex = 51;
-            this.label7.Text = "ESTADO";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(718, 29);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(71, 13);
+            this.label4.TabIndex = 47;
+            this.label4.Text = "MODALIDAD";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(145, 94);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(216, 21);
+            this.comboBox3.TabIndex = 44;
+            this.comboBox3.Text = "<<Seleccione su Tipo contrato>>";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(11, 94);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(95, 13);
+            this.label2.TabIndex = 45;
+            this.label2.Text = "TIPO CONTRATO";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(145, 61);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(216, 21);
+            this.comboBox1.TabIndex = 42;
+            this.comboBox1.Text = "<<Seleccione su Sede>>";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(11, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(36, 13);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "SEDE";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(145, 29);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(216, 21);
+            this.comboBox2.TabIndex = 38;
+            this.comboBox2.Text = "<<Seleccione su Empleado>>";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(11, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 13);
+            this.label3.TabIndex = 41;
+            this.label3.Text = "EMPLEADO";
             // 
             // button5
             // 

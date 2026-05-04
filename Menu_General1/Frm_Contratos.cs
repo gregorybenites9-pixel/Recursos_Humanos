@@ -36,5 +36,10 @@ namespace Menu_General1
         {
 
         }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

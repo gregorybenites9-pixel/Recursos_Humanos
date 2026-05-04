@@ -56,70 +56,71 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datos\Conexion.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormCargos.cs">
+    <Compile Include="Formularios\FormCargos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormCargos.Designer.cs">
+    <Compile Include="Formularios\FormCargos.Designer.cs">
       <DependentUpon>FormCargos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormContratos.cs">
+    <Compile Include="Formularios\FormContratos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormContratos.Designer.cs">
+    <Compile Include="Formularios\FormContratos.Designer.cs">
       <DependentUpon>FormContratos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormDistrito.cs">
+    <Compile Include="Formularios\FormDistrito.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormDistrito.Designer.cs">
+    <Compile Include="Formularios\FormDistrito.Designer.cs">
       <DependentUpon>FormDistrito.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormGestionarEmpleados.cs">
+    <Compile Include="Formularios\FormGestionarEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormGestionarEmpleados.Designer.cs">
+    <Compile Include="Formularios\FormGestionarEmpleados.Designer.cs">
       <DependentUpon>FormGestionarEmpleados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormIntegrantes.cs">
+    <Compile Include="Formularios\FormIntegrantes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormIntegrantes.Designer.cs">
+    <Compile Include="Formularios\FormIntegrantes.Designer.cs">
       <DependentUpon>FormIntegrantes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormPagos.cs">
+    <Compile Include="Formularios\FormPagos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormPagos.Designer.cs">
+    <Compile Include="Formularios\FormPagos.Designer.cs">
       <DependentUpon>FormPagos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormProfesion.cs">
+    <Compile Include="Formularios\FormProfesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormProfesion.Designer.cs">
+    <Compile Include="Formularios\FormProfesion.Designer.cs">
       <DependentUpon>FormProfesion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormRoles.cs">
+    <Compile Include="Formularios\FormRoles.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormRoles.Designer.cs">
+    <Compile Include="Formularios\FormRoles.Designer.cs">
       <DependentUpon>FormRoles.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormUsuarios.cs">
+    <Compile Include="Formularios\FormUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormUsuarios.Designer.cs">
+    <Compile Include="Formularios\FormUsuarios.Designer.cs">
       <DependentUpon>FormUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormVacaciones.cs">
+    <Compile Include="Formularios\FormVacaciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormVacaciones.Designer.cs">
+    <Compile Include="Formularios\FormVacaciones.Designer.cs">
       <DependentUpon>FormVacaciones.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_Contratos.cs">
@@ -133,34 +134,34 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormCargos.resx">
+    <EmbeddedResource Include="Formularios\FormCargos.resx">
       <DependentUpon>FormCargos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormContratos.resx">
+    <EmbeddedResource Include="Formularios\FormContratos.resx">
       <DependentUpon>FormContratos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormDistrito.resx">
+    <EmbeddedResource Include="Formularios\FormDistrito.resx">
       <DependentUpon>FormDistrito.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormGestionarEmpleados.resx">
+    <EmbeddedResource Include="Formularios\FormGestionarEmpleados.resx">
       <DependentUpon>FormGestionarEmpleados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormIntegrantes.resx">
+    <EmbeddedResource Include="Formularios\FormIntegrantes.resx">
       <DependentUpon>FormIntegrantes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormPagos.resx">
+    <EmbeddedResource Include="Formularios\FormPagos.resx">
       <DependentUpon>FormPagos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormProfesion.resx">
+    <EmbeddedResource Include="Formularios\FormProfesion.resx">
       <DependentUpon>FormProfesion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormRoles.resx">
+    <EmbeddedResource Include="Formularios\FormRoles.resx">
       <DependentUpon>FormRoles.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormUsuarios.resx">
+    <EmbeddedResource Include="Formularios\FormUsuarios.resx">
       <DependentUpon>FormUsuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormVacaciones.resx">
+    <EmbeddedResource Include="Formularios\FormVacaciones.resx">
       <DependentUpon>FormVacaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Contratos.resx">
@@ -207,6 +208,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\8e92c9be-6ed3-4107-9f4d-1407d2f35fcd-removebg-preview2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BaseDatos\Procedimientos.sql" />
+    <Content Include="BaseDatos\Script.sql" />
+    <Content Include="BaseDatos\Vistas.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entidades\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
