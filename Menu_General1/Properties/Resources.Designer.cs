@@ -63,59 +63,9 @@ namespace Menu_General1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _8e92c9be_6ed3_4107_9f4d_1407d2f35fcd_removebg_preview {
-            get {
-                object obj = ResourceManager.GetObject("8e92c9be-6ed3-4107-9f4d-1407d2f35fcd-removebg-preview", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _8e92c9be_6ed3_4107_9f4d_1407d2f35fcd_removebg_preview1 {
-            get {
-                object obj = ResourceManager.GetObject("8e92c9be-6ed3-4107-9f4d-1407d2f35fcd-removebg-preview1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _8e92c9be_6ed3_4107_9f4d_1407d2f35fcd_removebg_preview2 {
             get {
                 object obj = ResourceManager.GetObject("8e92c9be-6ed3-4107-9f4d-1407d2f35fcd-removebg-preview2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap descarga {
-            get {
-                object obj = ResourceManager.GetObject("descarga", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap descarga1 {
-            get {
-                object obj = ResourceManager.GetObject("descarga1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap descarga2 {
-            get {
-                object obj = ResourceManager.GetObject("descarga2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
