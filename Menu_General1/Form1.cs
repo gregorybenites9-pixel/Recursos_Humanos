@@ -390,5 +390,6 @@ namespace Menu_General1
             lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
             lblFecha.Text = DateTime.Now.ToString("dddd, MMMM dd, yyyy");
         }
+
     }
 }
