@@ -145,5 +145,13 @@ namespace Menu_General1
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            txtPin.UseSystemPasswordChar = false;
+            txtPin.PasswordChar = '\0';
+
+            txtPin.PasswordChar = '*';
+        }
     }
 }
