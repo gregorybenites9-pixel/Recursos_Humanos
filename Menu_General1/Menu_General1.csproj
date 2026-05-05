@@ -80,6 +80,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Datos\Conexion.cs" />
+    <Compile Include="Datos\EmpleadosDAL.cs" />
+    <Compile Include="Entidades\Empleados.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,9 +242,7 @@
     <Content Include="BaseDatos\Script.sql" />
     <Content Include="BaseDatos\Vistas.sql" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entidades\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>

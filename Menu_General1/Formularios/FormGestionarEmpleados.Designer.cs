@@ -92,6 +92,7 @@
             this.BTNELIMINAR.TabIndex = 81;
             this.BTNELIMINAR.Text = "ELIMINAR";
             this.BTNELIMINAR.UseVisualStyleBackColor = true;
+            this.BTNELIMINAR.Click += new System.EventHandler(this.BTNELIMINAR_Click);
             // 
             // BTNNUEVO
             // 
@@ -119,6 +120,7 @@
             this.BTNMOSTRAR.TabIndex = 82;
             this.BTNMOSTRAR.Text = "MOSTRAR";
             this.BTNMOSTRAR.UseVisualStyleBackColor = true;
+            this.BTNMOSTRAR.Click += new System.EventHandler(this.BTNMOSTRAR_Click);
             // 
             // label3
             // 
@@ -176,6 +178,7 @@
             this.BTNMODIFICAR.TabIndex = 80;
             this.BTNMODIFICAR.Text = "MODIFICAR";
             this.BTNMODIFICAR.UseVisualStyleBackColor = true;
+            this.BTNMODIFICAR.Click += new System.EventHandler(this.BTNMODIFICAR_Click);
             // 
             // BTNGUARDAR
             // 
@@ -185,6 +188,7 @@
             this.BTNGUARDAR.TabIndex = 79;
             this.BTNGUARDAR.Text = "GUARDAR";
             this.BTNGUARDAR.UseVisualStyleBackColor = true;
+            this.BTNGUARDAR.Click += new System.EventHandler(this.BTNGUARDAR_Click);
             // 
             // txtBuscar
             // 
@@ -193,6 +197,7 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(416, 20);
             this.txtBuscar.TabIndex = 88;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // label8
             // 
@@ -233,7 +238,7 @@
             // 
             this.cbBuscar.AutoSize = true;
             this.cbBuscar.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbBuscar.Location = new System.Drawing.Point(769, 508);
+            this.cbBuscar.Location = new System.Drawing.Point(788, 530);
             this.cbBuscar.Name = "cbBuscar";
             this.cbBuscar.Size = new System.Drawing.Size(66, 17);
             this.cbBuscar.TabIndex = 89;
@@ -264,12 +269,13 @@
             // BTNSALIR
             // 
             this.BTNSALIR.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNSALIR.Location = new System.Drawing.Point(863, 493);
+            this.BTNSALIR.Location = new System.Drawing.Point(880, 517);
             this.BTNSALIR.Name = "BTNSALIR";
             this.BTNSALIR.Size = new System.Drawing.Size(111, 39);
             this.BTNSALIR.TabIndex = 90;
             this.BTNSALIR.Text = "SALIR";
             this.BTNSALIR.UseVisualStyleBackColor = true;
+            this.BTNSALIR.Click += new System.EventHandler(this.BTNSALIR_Click);
             // 
             // label1
             // 
@@ -326,6 +332,7 @@
             this.dgvEmpleados.Name = "dgvEmpleados";
             this.dgvEmpleados.Size = new System.Drawing.Size(971, 86);
             this.dgvEmpleados.TabIndex = 91;
+            this.dgvEmpleados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpleados_CellContentClick);
             // 
             // groupBox3
             // 
@@ -501,16 +508,16 @@
             // cboDistrito
             // 
             this.cboDistrito.FormattingEnabled = true;
-            this.cboDistrito.Location = new System.Drawing.Point(837, 313);
+            this.cboDistrito.Location = new System.Drawing.Point(816, 316);
             this.cboDistrito.Name = "cboDistrito";
-            this.cboDistrito.Size = new System.Drawing.Size(102, 21);
+            this.cboDistrito.Size = new System.Drawing.Size(119, 21);
             this.cboDistrito.TabIndex = 97;
             this.cboDistrito.Text = "<<Seleccionar la Profesion>>";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(770, 317);
+            this.label15.Location = new System.Drawing.Point(749, 320);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(51, 13);
             this.label15.TabIndex = 96;
@@ -519,16 +526,16 @@
             // cboProvincia
             // 
             this.cboProvincia.FormattingEnabled = true;
-            this.cboProvincia.Location = new System.Drawing.Point(837, 273);
+            this.cboProvincia.Location = new System.Drawing.Point(816, 276);
             this.cboProvincia.Name = "cboProvincia";
-            this.cboProvincia.Size = new System.Drawing.Size(102, 21);
+            this.cboProvincia.Size = new System.Drawing.Size(119, 21);
             this.cboProvincia.TabIndex = 99;
             this.cboProvincia.Text = "<<Seleccionar la Profesion>>";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(770, 277);
+            this.label16.Location = new System.Drawing.Point(749, 280);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(60, 13);
             this.label16.TabIndex = 98;
@@ -537,11 +544,12 @@
             // cboPais
             // 
             this.cboPais.FormattingEnabled = true;
-            this.cboPais.Location = new System.Drawing.Point(531, 274);
+            this.cboPais.Location = new System.Drawing.Point(557, 275);
             this.cboPais.Name = "cboPais";
-            this.cboPais.Size = new System.Drawing.Size(102, 21);
+            this.cboPais.Size = new System.Drawing.Size(119, 21);
             this.cboPais.TabIndex = 103;
             this.cboPais.Text = "<<Seleccionar la Profesion>>";
+            this.cboPais.SelectedIndexChanged += new System.EventHandler(this.cboPais_SelectedIndexChanged);
             // 
             // label17
             // 
@@ -555,11 +563,12 @@
             // cboDepartamento
             // 
             this.cboDepartamento.FormattingEnabled = true;
-            this.cboDepartamento.Location = new System.Drawing.Point(531, 314);
+            this.cboDepartamento.Location = new System.Drawing.Point(557, 316);
             this.cboDepartamento.Name = "cboDepartamento";
-            this.cboDepartamento.Size = new System.Drawing.Size(102, 21);
+            this.cboDepartamento.Size = new System.Drawing.Size(119, 21);
             this.cboDepartamento.TabIndex = 101;
             this.cboDepartamento.Text = "<<Seleccionar la Profesion>>";
+            this.cboDepartamento.SelectedIndexChanged += new System.EventHandler(this.cboDepartamento_SelectedIndexChanged);
             // 
             // label20
             // 
@@ -585,6 +594,7 @@
             this.Controls.Add(this.label10);
             this.Name = "FormGestionarEmpleados";
             this.Text = "FormGestionarEmpleados";
+            this.Load += new System.EventHandler(this.FormGestionarEmpleados_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).EndInit();
             this.groupBox3.ResumeLayout(false);
