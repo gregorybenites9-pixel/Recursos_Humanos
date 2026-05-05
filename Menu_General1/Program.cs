@@ -16,7 +16,7 @@ namespace Menu_General1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LOGIN());
+            Application.Run(new PIN());
         }
     }
 }
