@@ -111,7 +111,8 @@
             this.cboTipodocumento.Name = "cboTipodocumento";
             this.cboTipodocumento.Size = new System.Drawing.Size(216, 21);
             this.cboTipodocumento.TabIndex = 83;
-            this.cboTipodocumento.Text = "<<Seleccionar la Profesion>>";
+            this.cboTipodocumento.Text = "<<Seleccionar el TipoDocumento>>";
+            this.cboTipodocumento.SelectedIndexChanged += new System.EventHandler(this.cboTipodocumento_SelectedIndexChanged);
             // 
             // BTNMOSTRAR
             // 
@@ -468,6 +469,7 @@
             this.cboProfesion.Size = new System.Drawing.Size(216, 21);
             this.cboProfesion.TabIndex = 95;
             this.cboProfesion.Text = "<<Seleccionar la Profesion>>";
+            this.cboProfesion.SelectedIndexChanged += new System.EventHandler(this.cboProfesion_SelectedIndexChanged);
             // 
             // label14
             // 
@@ -485,7 +487,8 @@
             this.cboGenero.Name = "cboGenero";
             this.cboGenero.Size = new System.Drawing.Size(216, 21);
             this.cboGenero.TabIndex = 93;
-            this.cboGenero.Text = "<<Seleccionar la Profesion>>";
+            this.cboGenero.Text = "<<Seleccionar el Genero>>";
+            this.cboGenero.SelectedIndexChanged += new System.EventHandler(this.cboGenero_SelectedIndexChanged);
             // 
             // label7
             // 

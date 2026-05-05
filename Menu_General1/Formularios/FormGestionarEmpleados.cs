@@ -387,9 +387,9 @@ namespace Menu_General1.Forms
             dtpFechaingreso.Value = DateTime.Now;
 
             // 🔹 Combos simples
-            cboTipodocumento.SelectedIndex = -1;
-            cboGenero.SelectedIndex = -1;
-            cboProfesion.SelectedIndex = -1;
+            cboTipodocumento.SelectedIndex = 0;
+            cboGenero.SelectedIndex = 0;
+            cboProfesion.SelectedIndex = 0;
 
             // 🔹 Cascada (reiniciar correctamente)
             cboPais.SelectedIndex = 0;          // << Seleccionar País >>
@@ -442,6 +442,21 @@ namespace Menu_General1.Forms
             {
                 return false;
             }
+        }
+
+        private void cboTipodocumento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cboProfesion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboGenero_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
