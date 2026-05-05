@@ -9,8 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Menu_General1.Entidades;
-using Menu_General1.Datos;
+
 
 namespace Menu_General1.Forms
 {

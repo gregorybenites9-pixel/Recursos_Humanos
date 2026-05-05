@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Menu_General1.Datos;
+using Menu_General1.Entidades;
 
 namespace Menu_General1.Datos
 {

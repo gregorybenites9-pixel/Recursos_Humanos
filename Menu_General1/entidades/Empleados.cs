@@ -24,7 +24,6 @@ namespace Menu_General1.Entidades
         public DateTime FechaIngreso { get; set; }
 
         public string DireccionActual { get; set; }
-
         public string Telefono1 { get; set; }
         public string Telefono2 { get; set; }
 
@@ -33,6 +32,6 @@ namespace Menu_General1.Entidades
 
         public string Observaciones { get; set; }
 
-        public bool Estado { get; set; } // opcional según uso
+        public bool Estado { get; set; }
     }
 }
