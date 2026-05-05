@@ -23,6 +23,7 @@ namespace Menu_General1.Forms
         public FormGestionarEmpleados()
         {
             InitializeComponent();
+            txtCodigo.ReadOnly = true;
         }
 
         private void FormGestionarEmpleados_Load(object sender, EventArgs e)
@@ -77,7 +78,6 @@ namespace Menu_General1.Forms
             dgvEmpleados.Columns["Numero_Documento"].HeaderText = "DNI";
             dgvEmpleados.Columns["Nombres"].HeaderText = "Nombres";
             dgvEmpleados.Columns["Apellidos"].HeaderText = "Apellidos";
-            dgvEmpleados.Columns["NombreCompleto"].HeaderText = "Nombre Completo";
 
             dgvEmpleados.Columns["Nombre_Tipo_Doc"].HeaderText = "Tipo Documento";
             dgvEmpleados.Columns["Nombre_Genero"].HeaderText = "Género";
@@ -161,6 +161,54 @@ namespace Menu_General1.Forms
 
         private void BTNGUARDAR_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtDni.Text))
+            {
+                MessageBox.Show("Ingrese DNI");
+                return;
+            }
+
+            if (txtDni.Text.Length != 8)
+            {
+                MessageBox.Show("El DNI debe tener 8 dígitos");
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtNombres.Text))
+            {
+                MessageBox.Show("Ingrese nombres");
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtApellidos.Text))
+            {
+                MessageBox.Show("Ingrese apellidos");
+                return;
+            }
+
+            if (cboDistrito.SelectedValue == null || Convert.ToInt32(cboDistrito.SelectedValue) == 0)
+            {
+                MessageBox.Show("Seleccione un distrito válido");
+                return;
+            }
+
+            if (cboTipodocumento.SelectedValue == null)
+            {
+                MessageBox.Show("Seleccione tipo de documento");
+                return;
+            }
+
+            if (cboGenero.SelectedValue == null)
+            {
+                MessageBox.Show("Seleccione género");
+                return;
+            }
+
+            if (cboProfesion.SelectedValue == null)
+            {
+                MessageBox.Show("Seleccione profesión");
+                return;
+            }
+
             if (cboDistrito.SelectedValue == null)
             {
                 MessageBox.Show("Seleccione un distrito");
@@ -179,9 +227,15 @@ namespace Menu_General1.Forms
                 FechaIngreso = dtpFechaingreso.Value,
                 Correo1 = txtCorreo1.Text
             };
+            if (!EsCorreoValido(txtCorreo1.Text))
+            {
+                MessageBox.Show("Correo inválido");
+                return;
+            }
 
             MessageBox.Show(empleadoDAL.InsertarEmpleado(e1));
             dgvEmpleados.DataSource = empleadoDAL.ListarEmpleados();
+            LimpiarFormulario();
         }
 
         private void BTNMODIFICAR_Click(object sender, EventArgs e)
@@ -203,12 +257,14 @@ namespace Menu_General1.Forms
 
             MessageBox.Show(empleadoDAL.ModificarEmpleado(e1));
             dgvEmpleados.DataSource = empleadoDAL.ListarEmpleados();
+            LimpiarFormulario();
         }
 
         private void BTNELIMINAR_Click(object sender, EventArgs e)
         {
             MessageBox.Show(empleadoDAL.EliminarEmpleado(idEmpleado));
             dgvEmpleados.DataSource = empleadoDAL.ListarEmpleados();
+            LimpiarFormulario();
         }
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
@@ -308,6 +364,84 @@ namespace Menu_General1.Forms
             cboDistrito.ValueMember = "IdDistrito";
             cboDistrito.SelectedIndex = 0;
         }
-        
+        private void LimpiarFormulario()
+        {
+            cargando = true;
+
+            // 🔹 Reset ID
+            idEmpleado = 0;
+
+            // 🔹 TextBox
+            txtDni.Clear();
+            txtNombres.Clear();
+            txtApellidos.Clear();
+            txtCorreo1.Clear();
+            txtCorreo2.Clear();
+            textDireccion.Clear();
+            textTel1.Clear();
+            textTel2.Clear();
+            txtObservaciones.Clear();
+
+            // 🔹 Fechas
+            dtpFecha.Value = DateTime.Now;
+            dtpFechaingreso.Value = DateTime.Now;
+
+            // 🔹 Combos simples
+            cboTipodocumento.SelectedIndex = -1;
+            cboGenero.SelectedIndex = -1;
+            cboProfesion.SelectedIndex = -1;
+
+            // 🔹 Cascada (reiniciar correctamente)
+            cboPais.SelectedIndex = 0;          // << Seleccionar País >>
+            cboDepartamento.DataSource = null;
+            cboProvincia.DataSource = null;
+            cboDistrito.DataSource = null;
+
+            cargando = false;
+        }
+
+        private void BTNNUEVO_Click(object sender, EventArgs e)
+        {
+            LimpiarFormulario();
+        }
+        private void txtDni_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Solo números y backspace
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+                return;
+            }
+
+            // Permitir edición correcta (evita bug de selección)
+            if (txtDni.SelectionLength > 0)
+                return;
+
+            // Máximo 8 caracteres
+            if (txtDni.Text.Length >= 8 && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+            }
+        }
+        private void textTel1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+                e.Handled = true;
+
+            if (textTel1.Text.Length >= 9 && e.KeyChar != (char)8)
+                e.Handled = true;
+        }
+        private bool EsCorreoValido(string correo)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(correo);
+                return addr.Address == correo;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }
