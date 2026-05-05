@@ -42,10 +42,11 @@
             this.button12 = new System.Windows.Forms.Button();
             this.txtPin = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.button13 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -210,6 +211,7 @@
             this.txtPin.Location = new System.Drawing.Point(46, 132);
             this.txtPin.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPin.Name = "txtPin";
+            this.txtPin.PasswordChar = '*';
             this.txtPin.Size = new System.Drawing.Size(342, 22);
             this.txtPin.TabIndex = 12;
             this.txtPin.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -224,6 +226,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(458, 79);
             this.panel1.TabIndex = 13;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(128, 49);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(202, 15);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Bienvenido al sistema empresarial !...";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(113, 9);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(231, 26);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "INICIAR SESION !...";
             // 
             // label1
             // 
@@ -248,27 +272,17 @@
             this.label2.TabIndex = 15;
             this.label2.Text = "OLVIDASTE EL PIN ?.";
             // 
-            // label3
+            // button13
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(113, 9);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(231, 26);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "INICIAR SESION !...";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(128, 49);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(202, 15);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Bienvenido al sistema empresarial !...";
+            this.button13.BackColor = System.Drawing.Color.Blue;
+            this.button13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button13.Location = new System.Drawing.Point(401, 137);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(20, 17);
+            this.button13.TabIndex = 16;
+            this.button13.Text = "°";
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // PIN
             // 
@@ -276,6 +290,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(458, 562);
+            this.Controls.Add(this.button13);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -325,5 +340,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button13;
     }
 }

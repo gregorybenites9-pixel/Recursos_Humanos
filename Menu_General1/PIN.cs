@@ -97,5 +97,13 @@ namespace Menu_General1
                 txtPin.Clear();
             }
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            txtPin.UseSystemPasswordChar = false;
+            txtPin.PasswordChar = '\0';
+
+            txtPin.PasswordChar = '*';
+        }
     }
 }
