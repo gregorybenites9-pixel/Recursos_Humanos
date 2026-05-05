@@ -22,6 +22,7 @@ namespace Menu_General1
         [DllImport("user32.Dll", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
+
         private void txtuser_Enter(object sender, EventArgs e)
         {
             if (txtuser.Text == "USUARIO")
@@ -70,7 +71,9 @@ namespace Menu_General1
 
             if (respuesta == DialogResult.Yes)
             {
-                Application.Exit();
+                PIN pin = new PIN();
+                pin.Show();
+                this.Close();
             }
         }
 
@@ -90,5 +93,6 @@ namespace Menu_General1
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
     }
 }

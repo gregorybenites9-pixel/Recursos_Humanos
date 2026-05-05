@@ -117,7 +117,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(469, 0);
+            this.label1.Location = new System.Drawing.Point(471, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 33);
             this.label1.TabIndex = 4;
@@ -162,9 +162,9 @@
             this.btnminimizar.IconColor = System.Drawing.Color.White;
             this.btnminimizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnminimizar.IconSize = 20;
-            this.btnminimizar.Location = new System.Drawing.Point(737, 2);
+            this.btnminimizar.Location = new System.Drawing.Point(736, 3);
             this.btnminimizar.Name = "btnminimizar";
-            this.btnminimizar.Size = new System.Drawing.Size(15, 15);
+            this.btnminimizar.Size = new System.Drawing.Size(17, 17);
             this.btnminimizar.TabIndex = 8;
             this.btnminimizar.UseVisualStyleBackColor = false;
             this.btnminimizar.Click += new System.EventHandler(this.btnminimizar_Click);
@@ -179,9 +179,9 @@
             this.btncerrar.IconColor = System.Drawing.Color.White;
             this.btncerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btncerrar.IconSize = 20;
-            this.btncerrar.Location = new System.Drawing.Point(761, 2);
+            this.btncerrar.Location = new System.Drawing.Point(759, 3);
             this.btncerrar.Name = "btncerrar";
-            this.btncerrar.Size = new System.Drawing.Size(15, 15);
+            this.btncerrar.Size = new System.Drawing.Size(17, 17);
             this.btncerrar.TabIndex = 7;
             this.btncerrar.UseVisualStyleBackColor = false;
             this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);

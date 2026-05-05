@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace Menu_General1
 {
@@ -16,6 +17,11 @@ namespace Menu_General1
         {
             InitializeComponent();
         }
+        [DllImport("user32.Dll", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.Dll", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
+
 
         private void button6_Click(object sender, EventArgs e)
         {
@@ -24,7 +30,8 @@ namespace Menu_General1
 
         private void PIN_Load(object sender, EventArgs e)
         {
-
+            txtPin.PasswordChar = '●';
+            txtPin.KeyPress += (s, ev) => ev.Handled = true; // bloquea el teclado
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -84,18 +91,59 @@ namespace Menu_General1
 
         private void button10_Click(object sender, EventArgs e)
         {
-            if (txtPin.Text == "1234") // Ejemplo de validación
+            if (txtPin.Text == "1234")
             {
-                MessageBox.Show("¡Bienvenido!");
+                MessageBox.Show("¡Bienvenido a SENATI!", "Bienvenido",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LOGIN ventanaDestino = new LOGIN();
                 ventanaDestino.Show();
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("PIN incorrecto");
+                MessageBox.Show("PIN incorrecto", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtPin.Clear();
             }
+        }
+
+        private void btncerrar_Click(object sender, EventArgs e)
+        {
+            DialogResult respuesta = MessageBox.Show(
+                "¿Está seguro de que desea salir?",
+                "Confirmar salida",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (respuesta == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void btnminimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkMostrarPin.Checked)
+                txtPin.PasswordChar = '\0'; // muestra el texto
+            else
+                txtPin.PasswordChar = '●'; // oculta el texto
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void PIN_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }
