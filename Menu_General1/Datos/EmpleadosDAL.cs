@@ -72,6 +72,82 @@ namespace Menu_General1.Datos
                 return dt;
             }
         }
+        // ===================== CASCADA =====================
+        public DataTable ObtenerUbicacionEmpleado(int idEmpleado)
+        {
+            DataTable dt = new DataTable();
+
+            using (SqlConnection con = cn.GetConexion())
+            {
+                using (SqlCommand cmd = new SqlCommand("SOFBE_ObtenerUbicacionEmpleado", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@IdEmpleado", idEmpleado);
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dt);
+                }
+            }
+
+            return dt;
+        }
+        public DataTable ObtenerPaises()
+        {
+            using (SqlConnection con = cn.GetConexion())
+            {
+                SqlDataAdapter da = new SqlDataAdapter("SOFBE_ObtenerPaises", con);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                return dt;
+            }
+        }
+
+        public DataTable ObtenerDepartamentos(int idPais)
+        {
+            using (SqlConnection con = cn.GetConexion())
+            {
+                SqlCommand cmd = new SqlCommand("SOFBE_ObtenerDepartamentosPorPais", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@IdPais", idPais);
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                return dt;
+            }
+        }
+
+        public DataTable ObtenerProvincias(int idDepartamento)
+        {
+            using (SqlConnection con = cn.GetConexion())
+            {
+                SqlCommand cmd = new SqlCommand("SOFBE_ObtenerProvinciasPorDepartamento", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@IdDepartamento", idDepartamento);
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                return dt;
+            }
+        }
+
+        public DataTable ObtenerDistritosPorProvincia(int idProvincia)
+        {
+            using (SqlConnection con = cn.GetConexion())
+            {
+                SqlCommand cmd = new SqlCommand("SOFBE_ObtenerDistritosPorProvincia", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@IdProvincia", idProvincia);
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                return dt;
+            }
+        }
 
         public DataTable BuscarEmpleado(string texto)
         {
