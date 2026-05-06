@@ -44,6 +44,8 @@
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.cbBuscar = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BTNGUARDAR = new System.Windows.Forms.Button();
+            this.BTNNUEVO = new System.Windows.Forms.Button();
             this.txtNombres = new System.Windows.Forms.TextBox();
             this.BTNSALIR = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -74,14 +76,14 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.dtpFechaingreso = new System.Windows.Forms.DateTimePicker();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.BTNGUARDAR = new System.Windows.Forms.Button();
-            this.BTNNUEVO = new System.Windows.Forms.Button();
             this.BTNMOSTRAR = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
             this.groupBox3.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // BTNELIMINAR
@@ -239,6 +241,30 @@
             this.groupBox1.TabIndex = 87;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Opciones:";
+            // 
+            // BTNGUARDAR
+            // 
+            this.BTNGUARDAR.Image = global::Menu_General1.Properties.Resources.WhatsApp_Image_2026_05_05_at_11_18_04_PM;
+            this.BTNGUARDAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNGUARDAR.Location = new System.Drawing.Point(267, 19);
+            this.BTNGUARDAR.Name = "BTNGUARDAR";
+            this.BTNGUARDAR.Size = new System.Drawing.Size(170, 43);
+            this.BTNGUARDAR.TabIndex = 79;
+            this.BTNGUARDAR.Text = "GUARDAR";
+            this.BTNGUARDAR.UseVisualStyleBackColor = true;
+            this.BTNGUARDAR.Click += new System.EventHandler(this.BTNGUARDAR_Click);
+            // 
+            // BTNNUEVO
+            // 
+            this.BTNNUEVO.Image = global::Menu_General1.Properties.Resources.WhatsApp_Image_2026_05_05_at_11_15_31_PM;
+            this.BTNNUEVO.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNNUEVO.Location = new System.Drawing.Point(39, 19);
+            this.BTNNUEVO.Name = "BTNNUEVO";
+            this.BTNNUEVO.Size = new System.Drawing.Size(170, 43);
+            this.BTNNUEVO.TabIndex = 78;
+            this.BTNNUEVO.Text = "NUEVO";
+            this.BTNNUEVO.UseVisualStyleBackColor = true;
+            this.BTNNUEVO.Click += new System.EventHandler(this.BTNNUEVO_Click);
             // 
             // txtNombres
             // 
@@ -548,54 +574,6 @@
             this.dtpFechaingreso.Size = new System.Drawing.Size(213, 20);
             this.dtpFechaingreso.TabIndex = 84;
             // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(11, 21);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(48, 13);
-            this.label19.TabIndex = 56;
-            this.label19.Text = "Codigo:";
-            // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.label10.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(-154, -4);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(1281, 42);
-            this.label10.TabIndex = 85;
-            this.label10.Text = "                                         REGISTROS DE EMPLEADOS                  " +
-    "                       ";
-            // 
-            // BTNGUARDAR
-            // 
-            this.BTNGUARDAR.Image = global::Menu_General1.Properties.Resources.WhatsApp_Image_2026_05_05_at_11_18_04_PM;
-            this.BTNGUARDAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNGUARDAR.Location = new System.Drawing.Point(267, 19);
-            this.BTNGUARDAR.Name = "BTNGUARDAR";
-            this.BTNGUARDAR.Size = new System.Drawing.Size(170, 43);
-            this.BTNGUARDAR.TabIndex = 79;
-            this.BTNGUARDAR.Text = "GUARDAR";
-            this.BTNGUARDAR.UseVisualStyleBackColor = true;
-            this.BTNGUARDAR.Click += new System.EventHandler(this.BTNGUARDAR_Click);
-            // 
-            // BTNNUEVO
-            // 
-            this.BTNNUEVO.Image = global::Menu_General1.Properties.Resources.WhatsApp_Image_2026_05_05_at_11_15_31_PM;
-            this.BTNNUEVO.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNNUEVO.Location = new System.Drawing.Point(39, 19);
-            this.BTNNUEVO.Name = "BTNNUEVO";
-            this.BTNNUEVO.Size = new System.Drawing.Size(170, 43);
-            this.BTNNUEVO.TabIndex = 78;
-            this.BTNNUEVO.Text = "NUEVO";
-            this.BTNNUEVO.UseVisualStyleBackColor = true;
-            this.BTNNUEVO.Click += new System.EventHandler(this.BTNNUEVO_Click);
-            // 
             // BTNMOSTRAR
             // 
             this.BTNMOSTRAR.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -610,11 +588,45 @@
             this.BTNMOSTRAR.UseVisualStyleBackColor = true;
             this.BTNMOSTRAR.Click += new System.EventHandler(this.BTNMOSTRAR_Click);
             // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(11, 21);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(48, 13);
+            this.label19.TabIndex = 56;
+            this.label19.Text = "Codigo:";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel1.Controls.Add(this.label21);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(958, 40);
+            this.panel1.TabIndex = 104;
+            // 
+            // label21
+            // 
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label21.Location = new System.Drawing.Point(189, -1);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(543, 42);
+            this.label21.TabIndex = 104;
+            this.label21.Text = "REGISTROS DE EMPLEADOS";
+            this.label21.Click += new System.EventHandler(this.label21_Click);
+            // 
             // FormGestionarEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 641);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.cbBuscar);
@@ -622,7 +634,6 @@
             this.Controls.Add(this.BTNSALIR);
             this.Controls.Add(this.dgvEmpleados);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.label10);
             this.Name = "FormGestionarEmpleados";
             this.Text = "FormGestionarEmpleados";
             this.Load += new System.EventHandler(this.FormGestionarEmpleados_Load);
@@ -630,6 +641,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -667,7 +680,6 @@
         private System.Windows.Forms.DataGridView dgvEmpleados;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox cboProfesion;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox cboGenero;
@@ -688,5 +700,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox cboDistrito;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label21;
     }
 }

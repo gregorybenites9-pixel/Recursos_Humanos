@@ -477,5 +477,10 @@ namespace Menu_General1.Forms
         {
 
         }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
