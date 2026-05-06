@@ -244,6 +244,15 @@
     <Content Include="BaseDatos\Procedimientos.sql" />
     <Content Include="BaseDatos\Script.sql" />
     <Content Include="BaseDatos\Vistas.sql" />
+    <None Include="Resources\WhatsApp Image 2026-05-05 at 11.18.04 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2026-05-05 at 11.15.31 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2026-05-05 at 11.15.24 PM1.jpeg" />
+    <None Include="Resources\WhatsApp Image 2026-05-05 at 11.15.23 PM1.jpeg" />
+    <None Include="Resources\WhatsApp Image 2026-05-05 at 11.15.22 PM1.jpeg" />
+    <None Include="Resources\WhatsApp Image 2026-05-05 at 11.15.08 PM1.jpeg" />
+    <None Include="Resources\WhatsApp Image 2026-05-05 at 11.15.05 PM2.jpeg" />
+    <None Include="Resources\WhatsApp Image 2026-05-05 at 11.15.06 PM1.jpeg" />
+    <None Include="Resources\WhatsApp Image 2026-05-05 at 11.15.05 PM1.jpeg" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

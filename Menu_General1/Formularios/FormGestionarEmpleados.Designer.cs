@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.BTNELIMINAR = new System.Windows.Forms.Button();
-            this.BTNNUEVO = new System.Windows.Forms.Button();
             this.cboTipodocumento = new System.Windows.Forms.ComboBox();
-            this.BTNMOSTRAR = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,7 +37,6 @@
             this.txtCorreo1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.BTNMODIFICAR = new System.Windows.Forms.Button();
-            this.BTNGUARDAR = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -79,6 +76,9 @@
             this.dtpFechaingreso = new System.Windows.Forms.DateTimePicker();
             this.label19 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.BTNGUARDAR = new System.Windows.Forms.Button();
+            this.BTNNUEVO = new System.Windows.Forms.Button();
+            this.BTNMOSTRAR = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -86,23 +86,15 @@
             // 
             // BTNELIMINAR
             // 
+            this.BTNELIMINAR.Image = global::Menu_General1.Properties.Resources.WhatsApp_Image_2026_05_05_at_11_15_08_PM;
+            this.BTNELIMINAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTNELIMINAR.Location = new System.Drawing.Point(721, 19);
             this.BTNELIMINAR.Name = "BTNELIMINAR";
-            this.BTNELIMINAR.Size = new System.Drawing.Size(170, 35);
+            this.BTNELIMINAR.Size = new System.Drawing.Size(170, 43);
             this.BTNELIMINAR.TabIndex = 81;
             this.BTNELIMINAR.Text = "ELIMINAR";
             this.BTNELIMINAR.UseVisualStyleBackColor = true;
             this.BTNELIMINAR.Click += new System.EventHandler(this.BTNELIMINAR_Click);
-            // 
-            // BTNNUEVO
-            // 
-            this.BTNNUEVO.Location = new System.Drawing.Point(39, 19);
-            this.BTNNUEVO.Name = "BTNNUEVO";
-            this.BTNNUEVO.Size = new System.Drawing.Size(170, 35);
-            this.BTNNUEVO.TabIndex = 78;
-            this.BTNNUEVO.Text = "NUEVO";
-            this.BTNNUEVO.UseVisualStyleBackColor = true;
-            this.BTNNUEVO.Click += new System.EventHandler(this.BTNNUEVO_Click);
             // 
             // cboTipodocumento
             // 
@@ -113,16 +105,6 @@
             this.cboTipodocumento.TabIndex = 83;
             this.cboTipodocumento.Text = "<<Seleccionar el TipoDocumento>>";
             this.cboTipodocumento.SelectedIndexChanged += new System.EventHandler(this.cboTipodocumento_SelectedIndexChanged);
-            // 
-            // BTNMOSTRAR
-            // 
-            this.BTNMOSTRAR.Location = new System.Drawing.Point(794, 38);
-            this.BTNMOSTRAR.Name = "BTNMOSTRAR";
-            this.BTNMOSTRAR.Size = new System.Drawing.Size(111, 39);
-            this.BTNMOSTRAR.TabIndex = 82;
-            this.BTNMOSTRAR.Text = "MOSTRAR";
-            this.BTNMOSTRAR.UseVisualStyleBackColor = true;
-            this.BTNMOSTRAR.Click += new System.EventHandler(this.BTNMOSTRAR_Click);
             // 
             // label3
             // 
@@ -174,23 +156,16 @@
             // 
             // BTNMODIFICAR
             // 
+            this.BTNMODIFICAR.Image = global::Menu_General1.Properties.Resources.WhatsApp_Image_2026_05_05_at_11_15_23_PM;
+            this.BTNMODIFICAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTNMODIFICAR.Location = new System.Drawing.Point(498, 19);
             this.BTNMODIFICAR.Name = "BTNMODIFICAR";
-            this.BTNMODIFICAR.Size = new System.Drawing.Size(170, 35);
+            this.BTNMODIFICAR.Size = new System.Drawing.Size(170, 43);
             this.BTNMODIFICAR.TabIndex = 80;
             this.BTNMODIFICAR.Text = "MODIFICAR";
+            this.BTNMODIFICAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BTNMODIFICAR.UseVisualStyleBackColor = true;
             this.BTNMODIFICAR.Click += new System.EventHandler(this.BTNMODIFICAR_Click);
-            // 
-            // BTNGUARDAR
-            // 
-            this.BTNGUARDAR.Location = new System.Drawing.Point(267, 19);
-            this.BTNGUARDAR.Name = "BTNGUARDAR";
-            this.BTNGUARDAR.Size = new System.Drawing.Size(170, 35);
-            this.BTNGUARDAR.TabIndex = 79;
-            this.BTNGUARDAR.Text = "GUARDAR";
-            this.BTNGUARDAR.UseVisualStyleBackColor = true;
-            this.BTNGUARDAR.Click += new System.EventHandler(this.BTNGUARDAR_Click);
             // 
             // txtBuscar
             // 
@@ -276,11 +251,14 @@
             // 
             this.BTNSALIR.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BTNSALIR.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNSALIR.Location = new System.Drawing.Point(821, 412);
+            this.BTNSALIR.Image = global::Menu_General1.Properties.Resources.WhatsApp_Image_2026_05_05_at_11_15_24_PM;
+            this.BTNSALIR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNSALIR.Location = new System.Drawing.Point(832, 408);
             this.BTNSALIR.Name = "BTNSALIR";
-            this.BTNSALIR.Size = new System.Drawing.Size(100, 30);
+            this.BTNSALIR.Size = new System.Drawing.Size(100, 37);
             this.BTNSALIR.TabIndex = 90;
             this.BTNSALIR.Text = "SALIR";
+            this.BTNSALIR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BTNSALIR.UseVisualStyleBackColor = true;
             this.BTNSALIR.Click += new System.EventHandler(this.BTNSALIR_Click);
             // 
@@ -593,6 +571,44 @@
             this.label10.TabIndex = 85;
             this.label10.Text = "                                         REGISTROS DE EMPLEADOS                  " +
     "                       ";
+            // 
+            // BTNGUARDAR
+            // 
+            this.BTNGUARDAR.Image = global::Menu_General1.Properties.Resources.WhatsApp_Image_2026_05_05_at_11_18_04_PM;
+            this.BTNGUARDAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNGUARDAR.Location = new System.Drawing.Point(267, 19);
+            this.BTNGUARDAR.Name = "BTNGUARDAR";
+            this.BTNGUARDAR.Size = new System.Drawing.Size(170, 43);
+            this.BTNGUARDAR.TabIndex = 79;
+            this.BTNGUARDAR.Text = "GUARDAR";
+            this.BTNGUARDAR.UseVisualStyleBackColor = true;
+            this.BTNGUARDAR.Click += new System.EventHandler(this.BTNGUARDAR_Click);
+            // 
+            // BTNNUEVO
+            // 
+            this.BTNNUEVO.Image = global::Menu_General1.Properties.Resources.WhatsApp_Image_2026_05_05_at_11_15_31_PM;
+            this.BTNNUEVO.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNNUEVO.Location = new System.Drawing.Point(39, 19);
+            this.BTNNUEVO.Name = "BTNNUEVO";
+            this.BTNNUEVO.Size = new System.Drawing.Size(170, 43);
+            this.BTNNUEVO.TabIndex = 78;
+            this.BTNNUEVO.Text = "NUEVO";
+            this.BTNNUEVO.UseVisualStyleBackColor = true;
+            this.BTNNUEVO.Click += new System.EventHandler(this.BTNNUEVO_Click);
+            // 
+            // BTNMOSTRAR
+            // 
+            this.BTNMOSTRAR.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.BTNMOSTRAR.Image = global::Menu_General1.Properties.Resources.WhatsApp_Image_2026_05_05_at_11_15_05_PM;
+            this.BTNMOSTRAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNMOSTRAR.Location = new System.Drawing.Point(756, 29);
+            this.BTNMOSTRAR.Name = "BTNMOSTRAR";
+            this.BTNMOSTRAR.Size = new System.Drawing.Size(149, 56);
+            this.BTNMOSTRAR.TabIndex = 82;
+            this.BTNMOSTRAR.Text = "MOSTRAR";
+            this.BTNMOSTRAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTNMOSTRAR.UseVisualStyleBackColor = true;
+            this.BTNMOSTRAR.Click += new System.EventHandler(this.BTNMOSTRAR_Click);
             // 
             // FormGestionarEmpleados
             // 
