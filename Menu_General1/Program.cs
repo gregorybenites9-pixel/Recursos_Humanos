@@ -17,7 +17,7 @@ namespace Menu_General1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormGestionarEmpleados());
+            Application.Run(new PIN());
         }
     }
 }

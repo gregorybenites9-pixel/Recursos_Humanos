@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Menu_General1.Entidades;
 
 namespace Menu_General1
 {
@@ -51,6 +52,34 @@ namespace Menu_General1
             timer1.Interval = 1000;
             timer1.Start();
             ActualizarReloj(); // muestra la hora inmediatamente sin esperar 1 segundo
+
+            AplicarPermisos();
+        }
+
+        private void AplicarPermisos()
+        {
+            string rol = UsuarioSesion.NombreRol;
+            bool esAdmin = rol == Roles.SuperAdmin || rol == Roles.Administrador;
+
+            // Solo admins ven Roles y Usuarios
+            rolesToolStripMenuItem.Enabled = esAdmin;
+            usuariosToolStripMenuItem.Enabled = esAdmin;
+
+            // Contabilidad y Empleado no ven Vacaciones
+            if (rol == Roles.Contabilidad || rol == Roles.Empleado)
+                vacacionesToolStripMenuItem.Enabled = false;
+
+            // Empleado y Supervisor no ven Pagos
+            if (rol == Roles.Empleado || rol == Roles.Supervisor)
+                pagosToolStripMenuItem.Enabled = false;
+
+            // Solo admins y RRHH ven Cargos, Distrito, Profesion
+            if (rol != Roles.SuperAdmin && rol != Roles.Administrador && rol != Roles.RecursosHumanos)
+            {
+                cargosToolStripMenuItem.Enabled = false;
+                distritoToolStripMenuItem.Enabled = false;
+                profesiónToolStripMenuItem.Enabled = false;
+            }
         }
 
         //Overridden methods
@@ -166,7 +195,13 @@ namespace Menu_General1
         }
         private void btnClose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("¿Está seguro que desea cerrar la aplicación?",
+                "Confirmar cierre",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         //Private methods
@@ -354,6 +389,14 @@ namespace Menu_General1
 
         private void rolesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (UsuarioSesion.NombreRol != Roles.SuperAdmin &&
+                UsuarioSesion.NombreRol != Roles.Administrador)
+            {
+                MessageBox.Show("No tiene permisos para acceder a este módulo.",
+                    "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                ResetMenuButtons();
+                return;
+            }
             ResetMenuButtons();
             OpenChildForm(new Forms.FormRoles());
         }
@@ -391,5 +434,13 @@ namespace Menu_General1
             lblFecha.Text = DateTime.Now.ToString("dddd, MMMM dd, yyyy");
         }
 
+        private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ResetMenuButtons();
+
+            if (MessageBox.Show("¿Está seguro que desea cerrar sesión?", "Advertencia",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                this.Close();
+        }
     }
 }

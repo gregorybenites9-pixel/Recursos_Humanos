@@ -81,7 +81,10 @@
   <ItemGroup>
     <Compile Include="Datos\Conexion.cs" />
     <Compile Include="Datos\EmpleadosDAL.cs" />
+    <Compile Include="Datos\UsuarioDAL.cs" />
     <Compile Include="Entidades\Empleados.cs" />
+    <Compile Include="Entidades\Roles.cs" />
+    <Compile Include="Entidades\UsuarioSesion.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

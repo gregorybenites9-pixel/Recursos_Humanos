@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Menu_General1.Entidades;
 
 namespace Menu_General1.Forms
 {
@@ -15,6 +16,27 @@ namespace Menu_General1.Forms
         public FormRoles()
         {
             InitializeComponent();
+        }
+
+        private void FormRoles_Load(object sender, EventArgs e)
+        {
+            AplicarPermisos();
+        }
+
+        private void AplicarPermisos()
+        {
+            string rol = UsuarioSesion.NombreRol;
+
+            if (rol == Roles.Supervisor ||
+                rol == Roles.Empleado ||
+                rol == Roles.Contabilidad)
+            {
+                BTNNUEVO.Enabled = false;
+                BTNGUARDAR.Enabled = false;
+                BTNMODIFICAR.Enabled = false;
+                BTNELIMINAR.Enabled = false;
+                // BTNMOSTRAR y BTNSALIR siempre habilitados
+            }
         }
     }
 }

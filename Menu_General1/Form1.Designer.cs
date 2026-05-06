@@ -100,7 +100,7 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
-            this.panelMenu.Size = new System.Drawing.Size(230, 561);
+            this.panelMenu.Size = new System.Drawing.Size(230, 749);
             this.panelMenu.TabIndex = 0;
             // 
             // iconButton8
@@ -115,10 +115,10 @@
             this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton8.IconSize = 30;
             this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton8.Location = new System.Drawing.Point(0, 502);
+            this.iconButton8.Location = new System.Drawing.Point(0, 689);
             this.iconButton8.Name = "iconButton8";
             this.iconButton8.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton8.Size = new System.Drawing.Size(230, 44);
+            this.iconButton8.Size = new System.Drawing.Size(230, 45);
             this.iconButton8.TabIndex = 7;
             this.iconButton8.Tag = "Salir";
             this.iconButton8.Text = "SALIR";
@@ -139,10 +139,10 @@
             this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton7.IconSize = 30;
             this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.Location = new System.Drawing.Point(0, 334);
+            this.iconButton7.Location = new System.Drawing.Point(0, 364);
             this.iconButton7.Name = "iconButton7";
             this.iconButton7.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton7.Size = new System.Drawing.Size(230, 44);
+            this.iconButton7.Size = new System.Drawing.Size(230, 50);
             this.iconButton7.TabIndex = 6;
             this.iconButton7.Tag = "Ayuda";
             this.iconButton7.Text = "AYUDA";
@@ -163,10 +163,10 @@
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton6.IconSize = 30;
             this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.Location = new System.Drawing.Point(0, 290);
+            this.iconButton6.Location = new System.Drawing.Point(0, 314);
             this.iconButton6.Name = "iconButton6";
             this.iconButton6.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton6.Size = new System.Drawing.Size(230, 44);
+            this.iconButton6.Size = new System.Drawing.Size(230, 50);
             this.iconButton6.TabIndex = 5;
             this.iconButton6.Tag = "Configuracion";
             this.iconButton6.Text = "CONFIGURACIÓN";
@@ -187,10 +187,10 @@
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton5.IconSize = 30;
             this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(0, 246);
+            this.iconButton5.Location = new System.Drawing.Point(0, 264);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton5.Size = new System.Drawing.Size(230, 44);
+            this.iconButton5.Size = new System.Drawing.Size(230, 50);
             this.iconButton5.TabIndex = 4;
             this.iconButton5.Tag = "Ubicacion";
             this.iconButton5.Text = "UBICACIÓN";
@@ -211,10 +211,10 @@
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.IconSize = 30;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(0, 202);
+            this.iconButton4.Location = new System.Drawing.Point(0, 214);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton4.Size = new System.Drawing.Size(230, 44);
+            this.iconButton4.Size = new System.Drawing.Size(230, 50);
             this.iconButton4.TabIndex = 3;
             this.iconButton4.Tag = "Organizacion";
             this.iconButton4.Text = "ORGANIZACIÓN";
@@ -235,10 +235,10 @@
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.IconSize = 30;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(0, 158);
+            this.iconButton3.Location = new System.Drawing.Point(0, 164);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton3.Size = new System.Drawing.Size(230, 44);
+            this.iconButton3.Size = new System.Drawing.Size(230, 50);
             this.iconButton3.TabIndex = 2;
             this.iconButton3.Tag = "Empleados";
             this.iconButton3.Text = "EMPLEADOS";
@@ -262,7 +262,7 @@
             this.iconButton2.Location = new System.Drawing.Point(0, 114);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton2.Size = new System.Drawing.Size(230, 44);
+            this.iconButton2.Size = new System.Drawing.Size(230, 50);
             this.iconButton2.TabIndex = 1;
             this.iconButton2.Tag = "Inicio";
             this.iconButton2.Text = "INICIO";
@@ -316,7 +316,7 @@
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(230, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(904, 60);
+            this.panelTitleBar.Size = new System.Drawing.Size(974, 60);
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -341,7 +341,7 @@
             this.btnMinimize.IconColor = System.Drawing.Color.White;
             this.btnMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMinimize.IconSize = 20;
-            this.btnMinimize.Location = new System.Drawing.Point(769, 0);
+            this.btnMinimize.Location = new System.Drawing.Point(839, 0);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(45, 25);
             this.btnMinimize.TabIndex = 4;
@@ -358,7 +358,7 @@
             this.btnMaximize.IconColor = System.Drawing.Color.White;
             this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMaximize.IconSize = 20;
-            this.btnMaximize.Location = new System.Drawing.Point(814, 0);
+            this.btnMaximize.Location = new System.Drawing.Point(884, 0);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(45, 25);
             this.btnMaximize.TabIndex = 3;
@@ -375,7 +375,7 @@
             this.btnClose.IconColor = System.Drawing.Color.White;
             this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnClose.IconSize = 20;
-            this.btnClose.Location = new System.Drawing.Point(859, 0);
+            this.btnClose.Location = new System.Drawing.Point(929, 0);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(45, 25);
             this.btnClose.TabIndex = 2;
@@ -526,8 +526,9 @@
             // cerrarSesionToolStripMenuItem
             // 
             this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
-            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesión";
+            this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
             // 
             // panelShadow
             // 
@@ -535,7 +536,7 @@
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(230, 60);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(904, 9);
+            this.panelShadow.Size = new System.Drawing.Size(974, 9);
             this.panelShadow.TabIndex = 6;
             // 
             // panelDesktop
@@ -545,7 +546,7 @@
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(230, 69);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(904, 492);
+            this.panelDesktop.Size = new System.Drawing.Size(974, 680);
             this.panelDesktop.TabIndex = 7;
             // 
             // panel2
@@ -556,14 +557,14 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(904, 492);
+            this.panel2.Size = new System.Drawing.Size(974, 680);
             this.panel2.TabIndex = 4;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(258, 54);
+            this.pictureBox2.Location = new System.Drawing.Point(293, 148);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(388, 185);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -575,7 +576,7 @@
             this.lblFecha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFecha.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.Color.MediumPurple;
-            this.lblFecha.Location = new System.Drawing.Point(301, 298);
+            this.lblFecha.Location = new System.Drawing.Point(336, 392);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(300, 30);
             this.lblFecha.TabIndex = 3;
@@ -587,7 +588,7 @@
             this.lblHora.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblHora.Font = new System.Drawing.Font("Verdana", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.Color.White;
-            this.lblHora.Location = new System.Drawing.Point(302, 242);
+            this.lblHora.Location = new System.Drawing.Point(337, 336);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(300, 60);
             this.lblHora.TabIndex = 2;
@@ -603,11 +604,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1134, 561);
+            this.ClientSize = new System.Drawing.Size(1204, 749);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

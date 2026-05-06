@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PIN));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -42,11 +43,11 @@
             this.button12 = new System.Windows.Forms.Button();
             this.txtPin = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnminimizar = new FontAwesome.Sharp.IconButton();
             this.label4 = new System.Windows.Forms.Label();
+            this.btncerrar = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnminimizar = new FontAwesome.Sharp.IconButton();
-            this.btncerrar = new FontAwesome.Sharp.IconButton();
             this.chkMostrarPin = new System.Windows.Forms.CheckBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
@@ -232,27 +233,22 @@
             this.panel1.TabIndex = 13;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
-            // label4
+            // btnminimizar
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(128, 50);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(202, 15);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Bienvenido al sistema empresarial !...";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(113, 13);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(231, 26);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "INICIAR SESION !...";
+            this.btnminimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnminimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnminimizar.FlatAppearance.BorderSize = 0;
+            this.btnminimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnminimizar.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.btnminimizar.IconColor = System.Drawing.Color.White;
+            this.btnminimizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnminimizar.IconSize = 20;
+            this.btnminimizar.Location = new System.Drawing.Point(401, 3);
+            this.btnminimizar.Name = "btnminimizar";
+            this.btnminimizar.Size = new System.Drawing.Size(18, 18);
+            this.btnminimizar.TabIndex = 17;
+            this.btnminimizar.UseVisualStyleBackColor = false;
+            this.btnminimizar.Click += new System.EventHandler(this.btnminimizar_Click);
             // 
             // label4
             // 
@@ -263,6 +259,23 @@
             this.label4.Size = new System.Drawing.Size(202, 15);
             this.label4.TabIndex = 1;
             this.label4.Text = "Bienvenido al sistema empresarial !...";
+            // 
+            // btncerrar
+            // 
+            this.btncerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btncerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btncerrar.FlatAppearance.BorderSize = 0;
+            this.btncerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncerrar.IconChar = FontAwesome.Sharp.IconChar.X;
+            this.btncerrar.IconColor = System.Drawing.Color.White;
+            this.btncerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btncerrar.IconSize = 20;
+            this.btncerrar.Location = new System.Drawing.Point(423, 3);
+            this.btncerrar.Name = "btncerrar";
+            this.btncerrar.Size = new System.Drawing.Size(18, 18);
+            this.btncerrar.TabIndex = 16;
+            this.btncerrar.UseVisualStyleBackColor = false;
+            this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
             // label3
             // 
@@ -287,40 +300,6 @@
             this.label1.Size = new System.Drawing.Size(191, 15);
             this.label1.TabIndex = 14;
             this.label1.Text = "INGRESA PIN DE SEGURIDAD !...";
-            // 
-            // btnminimizar
-            // 
-            this.btnminimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnminimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnminimizar.FlatAppearance.BorderSize = 0;
-            this.btnminimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnminimizar.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            this.btnminimizar.IconColor = System.Drawing.Color.White;
-            this.btnminimizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnminimizar.IconSize = 20;
-            this.btnminimizar.Location = new System.Drawing.Point(401, 3);
-            this.btnminimizar.Name = "btnminimizar";
-            this.btnminimizar.Size = new System.Drawing.Size(18, 18);
-            this.btnminimizar.TabIndex = 17;
-            this.btnminimizar.UseVisualStyleBackColor = false;
-            this.btnminimizar.Click += new System.EventHandler(this.btnminimizar_Click);
-            // 
-            // btncerrar
-            // 
-            this.btncerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btncerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btncerrar.FlatAppearance.BorderSize = 0;
-            this.btncerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncerrar.IconChar = FontAwesome.Sharp.IconChar.X;
-            this.btncerrar.IconColor = System.Drawing.Color.White;
-            this.btncerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btncerrar.IconSize = 20;
-            this.btncerrar.Location = new System.Drawing.Point(423, 3);
-            this.btncerrar.Name = "btncerrar";
-            this.btncerrar.Size = new System.Drawing.Size(18, 18);
-            this.btncerrar.TabIndex = 16;
-            this.btncerrar.UseVisualStyleBackColor = false;
-            this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
             // chkMostrarPin
             // 
@@ -372,6 +351,7 @@
             this.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "PIN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

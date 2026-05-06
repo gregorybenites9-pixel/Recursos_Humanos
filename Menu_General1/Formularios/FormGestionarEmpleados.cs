@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Menu_General1.Entidades;
 
 
 namespace Menu_General1.Forms
@@ -29,6 +30,7 @@ namespace Menu_General1.Forms
         private void FormGestionarEmpleados_Load(object sender, EventArgs e)
         {
             cargando = true;
+            AplicarPermisos();
 
             // 🔽 PAÍS (con placeholder)
             DataTable dtPais = empleadoDAL.ObtenerPaises();
@@ -364,6 +366,23 @@ namespace Menu_General1.Forms
             cboDistrito.ValueMember = "IdDistrito";
             cboDistrito.SelectedIndex = 0;
         }
+
+        private void AplicarPermisos()
+        {
+            string rol = UsuarioSesion.NombreRol;
+
+            if (rol == Roles.Supervisor ||
+                rol == Roles.Empleado ||
+                rol == Roles.Contabilidad)
+            {
+                BTNNUEVO.Enabled = false;
+                BTNGUARDAR.Enabled = false;
+                BTNMODIFICAR.Enabled = false;
+                BTNELIMINAR.Enabled = false;
+                // BTNMOSTRAR y BTNSALIR siempre habilitados
+            }
+        }
+
         private void LimpiarFormulario()
         {
             cargando = true;
