@@ -23,19 +23,17 @@ namespace Menu_General1.Forms
             AplicarPermisos();
         }
 
+        // Solo SuperAdmin y Administrador
         private void AplicarPermisos()
         {
             string rol = UsuarioSesion.NombreRol;
-
-            if (rol == Roles.Supervisor ||
-                rol == Roles.Empleado ||
-                rol == Roles.Contabilidad)
+            if (rol != Roles.SuperAdmin &&
+                rol != Roles.Administrador)
             {
                 BTNNUEVO.Enabled = false;
                 BTNGUARDAR.Enabled = false;
                 BTNMODIFICAR.Enabled = false;
                 BTNELIMINAR.Enabled = false;
-                // BTNMOSTRAR y BTNSALIR siempre habilitados
             }
         }
     }

@@ -419,6 +419,7 @@
             this.Controls.Add(this.label10);
             this.Name = "FormCargos";
             this.Text = "FormCargos";
+            this.Load += new System.EventHandler(this.FormCargos_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocentes)).EndInit();
             this.groupBox3.ResumeLayout(false);

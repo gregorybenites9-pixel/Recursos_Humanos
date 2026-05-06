@@ -26,16 +26,13 @@ namespace Menu_General1.Forms
         private void AplicarPermisos()
         {
             string rol = UsuarioSesion.NombreRol;
-
-            if (rol == Roles.Supervisor ||
-                rol == Roles.Empleado ||
-                rol == Roles.Contabilidad)
+            // Empleado solo ve, Supervisor puede todo
+            if (rol == Roles.Empleado)
             {
                 BTNNUEVO.Enabled = false;
                 BTNGUARDAR.Enabled = false;
                 BTNMODIFICAR.Enabled = false;
                 BTNELIMINAR.Enabled = false;
-                // BTNMOSTRAR y BTNSALIR siempre habilitados
             }
         }
     }
