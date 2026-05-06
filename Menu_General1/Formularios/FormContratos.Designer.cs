@@ -28,10 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BTNELIMINAR = new System.Windows.Forms.Button();
-            this.BTNNUEVO = new System.Windows.Forms.Button();
             this.cboProfesión = new System.Windows.Forms.ComboBox();
-            this.BTNMOSTRAR = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,8 +36,6 @@
             this.txtTel1 = new System.Windows.Forms.TextBox();
             this.txtLugar = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.BTNMODIFICAR = new System.Windows.Forms.Button();
-            this.BTNGUARDAR = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,7 +45,6 @@
             this.cbBuscar = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtNombres = new System.Windows.Forms.TextBox();
-            this.BTNSALIR = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.txtDni = new System.Windows.Forms.TextBox();
@@ -61,28 +55,16 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.BTNMOSTRAR = new System.Windows.Forms.Button();
+            this.BTNELIMINAR = new System.Windows.Forms.Button();
+            this.BTNSALIR = new System.Windows.Forms.Button();
+            this.BTNNUEVO = new System.Windows.Forms.Button();
+            this.BTNGUARDAR = new System.Windows.Forms.Button();
+            this.BTNMODIFICAR = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocentes)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // BTNELIMINAR
-            // 
-            this.BTNELIMINAR.Location = new System.Drawing.Point(732, 19);
-            this.BTNELIMINAR.Name = "BTNELIMINAR";
-            this.BTNELIMINAR.Size = new System.Drawing.Size(170, 35);
-            this.BTNELIMINAR.TabIndex = 81;
-            this.BTNELIMINAR.Text = "ELIMINAR";
-            this.BTNELIMINAR.UseVisualStyleBackColor = true;
-            // 
-            // BTNNUEVO
-            // 
-            this.BTNNUEVO.Location = new System.Drawing.Point(33, 19);
-            this.BTNNUEVO.Name = "BTNNUEVO";
-            this.BTNNUEVO.Size = new System.Drawing.Size(170, 35);
-            this.BTNNUEVO.TabIndex = 78;
-            this.BTNNUEVO.Text = "NUEVO";
-            this.BTNNUEVO.UseVisualStyleBackColor = true;
             // 
             // cboProfesión
             // 
@@ -92,15 +74,6 @@
             this.cboProfesión.Size = new System.Drawing.Size(216, 21);
             this.cboProfesión.TabIndex = 83;
             this.cboProfesión.Text = "<<Seleccionar la Profesion>>";
-            // 
-            // BTNMOSTRAR
-            // 
-            this.BTNMOSTRAR.Location = new System.Drawing.Point(807, 27);
-            this.BTNMOSTRAR.Name = "BTNMOSTRAR";
-            this.BTNMOSTRAR.Size = new System.Drawing.Size(111, 39);
-            this.BTNMOSTRAR.TabIndex = 82;
-            this.BTNMOSTRAR.Text = "MOSTRAR";
-            this.BTNMOSTRAR.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -156,24 +129,6 @@
             this.label5.Size = new System.Drawing.Size(61, 13);
             this.label5.TabIndex = 72;
             this.label5.Text = "Telefono2:";
-            // 
-            // BTNMODIFICAR
-            // 
-            this.BTNMODIFICAR.Location = new System.Drawing.Point(501, 19);
-            this.BTNMODIFICAR.Name = "BTNMODIFICAR";
-            this.BTNMODIFICAR.Size = new System.Drawing.Size(170, 35);
-            this.BTNMODIFICAR.TabIndex = 80;
-            this.BTNMODIFICAR.Text = "MODIFICAR";
-            this.BTNMODIFICAR.UseVisualStyleBackColor = true;
-            // 
-            // BTNGUARDAR
-            // 
-            this.BTNGUARDAR.Location = new System.Drawing.Point(268, 19);
-            this.BTNGUARDAR.Name = "BTNGUARDAR";
-            this.BTNGUARDAR.Size = new System.Drawing.Size(170, 35);
-            this.BTNGUARDAR.TabIndex = 79;
-            this.BTNGUARDAR.Text = "GUARDAR";
-            this.BTNGUARDAR.UseVisualStyleBackColor = true;
             // 
             // txtBuscar
             // 
@@ -244,10 +199,10 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox1.Controls.Add(this.BTNELIMINAR);
-            this.groupBox1.Controls.Add(this.BTNMODIFICAR);
-            this.groupBox1.Controls.Add(this.BTNGUARDAR);
             this.groupBox1.Controls.Add(this.BTNNUEVO);
+            this.groupBox1.Controls.Add(this.BTNELIMINAR);
+            this.groupBox1.Controls.Add(this.BTNGUARDAR);
+            this.groupBox1.Controls.Add(this.BTNMODIFICAR);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 264);
             this.groupBox1.Name = "groupBox1";
@@ -262,17 +217,6 @@
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(216, 20);
             this.txtNombres.TabIndex = 62;
-            // 
-            // BTNSALIR
-            // 
-            this.BTNSALIR.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BTNSALIR.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNSALIR.Location = new System.Drawing.Point(819, 338);
-            this.BTNSALIR.Name = "BTNSALIR";
-            this.BTNSALIR.Size = new System.Drawing.Size(100, 30);
-            this.BTNSALIR.TabIndex = 90;
-            this.BTNSALIR.Text = "SALIR";
-            this.BTNSALIR.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -334,8 +278,8 @@
             // groupBox3
             // 
             this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox3.Controls.Add(this.cboProfesión);
             this.groupBox3.Controls.Add(this.BTNMOSTRAR);
+            this.groupBox3.Controls.Add(this.cboProfesión);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.txtCorreo);
             this.groupBox3.Controls.Add(this.label4);
@@ -387,16 +331,88 @@
             this.label10.Text = "                                         REGISTROS DE CONTRATOS                  " +
     "                       ";
             // 
+            // BTNMOSTRAR
+            // 
+            this.BTNMOSTRAR.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.BTNMOSTRAR.Image = global::Menu_General1.Properties.Resources.WhatsApp_Image_2026_05_05_at_11_15_05_PM;
+            this.BTNMOSTRAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNMOSTRAR.Location = new System.Drawing.Point(813, 5);
+            this.BTNMOSTRAR.Name = "BTNMOSTRAR";
+            this.BTNMOSTRAR.Size = new System.Drawing.Size(136, 56);
+            this.BTNMOSTRAR.TabIndex = 111;
+            this.BTNMOSTRAR.Text = "MOSTRAR";
+            this.BTNMOSTRAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTNMOSTRAR.UseVisualStyleBackColor = true;
+            // 
+            // BTNELIMINAR
+            // 
+            this.BTNELIMINAR.Image = global::Menu_General1.Properties.Resources.WhatsApp_Image_2026_05_05_at_11_15_08_PM;
+            this.BTNELIMINAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNELIMINAR.Location = new System.Drawing.Point(710, 17);
+            this.BTNELIMINAR.Name = "BTNELIMINAR";
+            this.BTNELIMINAR.Size = new System.Drawing.Size(170, 43);
+            this.BTNELIMINAR.TabIndex = 110;
+            this.BTNELIMINAR.Text = "ELIMINAR";
+            this.BTNELIMINAR.UseVisualStyleBackColor = true;
+            // 
+            // BTNSALIR
+            // 
+            this.BTNSALIR.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BTNSALIR.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNSALIR.Image = global::Menu_General1.Properties.Resources.WhatsApp_Image_2026_05_05_at_11_15_24_PM;
+            this.BTNSALIR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNSALIR.Location = new System.Drawing.Point(835, 336);
+            this.BTNSALIR.Name = "BTNSALIR";
+            this.BTNSALIR.Size = new System.Drawing.Size(100, 37);
+            this.BTNSALIR.TabIndex = 112;
+            this.BTNSALIR.Text = "SALIR";
+            this.BTNSALIR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTNSALIR.UseVisualStyleBackColor = true;
+            // 
+            // BTNNUEVO
+            // 
+            this.BTNNUEVO.Image = global::Menu_General1.Properties.Resources.WhatsApp_Image_2026_05_05_at_11_15_31_PM;
+            this.BTNNUEVO.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNNUEVO.Location = new System.Drawing.Point(14, 17);
+            this.BTNNUEVO.Name = "BTNNUEVO";
+            this.BTNNUEVO.Size = new System.Drawing.Size(170, 43);
+            this.BTNNUEVO.TabIndex = 107;
+            this.BTNNUEVO.Text = "NUEVO";
+            this.BTNNUEVO.UseVisualStyleBackColor = true;
+            // 
+            // BTNGUARDAR
+            // 
+            this.BTNGUARDAR.Image = global::Menu_General1.Properties.Resources.WhatsApp_Image_2026_05_05_at_11_18_04_PM;
+            this.BTNGUARDAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNGUARDAR.Location = new System.Drawing.Point(244, 17);
+            this.BTNGUARDAR.Name = "BTNGUARDAR";
+            this.BTNGUARDAR.Size = new System.Drawing.Size(170, 43);
+            this.BTNGUARDAR.TabIndex = 108;
+            this.BTNGUARDAR.Text = "GUARDAR";
+            this.BTNGUARDAR.UseVisualStyleBackColor = true;
+            // 
+            // BTNMODIFICAR
+            // 
+            this.BTNMODIFICAR.Image = global::Menu_General1.Properties.Resources.WhatsApp_Image_2026_05_05_at_11_15_23_PM;
+            this.BTNMODIFICAR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNMODIFICAR.Location = new System.Drawing.Point(483, 17);
+            this.BTNMODIFICAR.Name = "BTNMODIFICAR";
+            this.BTNMODIFICAR.Size = new System.Drawing.Size(170, 43);
+            this.BTNMODIFICAR.TabIndex = 109;
+            this.BTNMODIFICAR.Text = "MODIFICAR";
+            this.BTNMODIFICAR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTNMODIFICAR.UseVisualStyleBackColor = true;
+            // 
             // FormContratos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 641);
+            this.Controls.Add(this.BTNSALIR);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.cbBuscar);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.BTNSALIR);
             this.Controls.Add(this.dgvDocentes);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label10);
@@ -413,11 +429,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button BTNELIMINAR;
-        private System.Windows.Forms.Button BTNNUEVO;
         private System.Windows.Forms.ComboBox cboProfesión;
-        private System.Windows.Forms.Button BTNMOSTRAR;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label label4;
@@ -425,8 +437,6 @@
         private System.Windows.Forms.TextBox txtTel1;
         private System.Windows.Forms.TextBox txtLugar;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button BTNMODIFICAR;
-        private System.Windows.Forms.Button BTNGUARDAR;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
@@ -436,7 +446,6 @@
         private System.Windows.Forms.CheckBox cbBuscar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtNombres;
-        private System.Windows.Forms.Button BTNSALIR;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtApellidos;
         private System.Windows.Forms.TextBox txtDni;
@@ -447,5 +456,11 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button BTNNUEVO;
+        private System.Windows.Forms.Button BTNELIMINAR;
+        private System.Windows.Forms.Button BTNGUARDAR;
+        private System.Windows.Forms.Button BTNMODIFICAR;
+        private System.Windows.Forms.Button BTNMOSTRAR;
+        private System.Windows.Forms.Button BTNSALIR;
     }
 }

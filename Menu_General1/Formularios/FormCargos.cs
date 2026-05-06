@@ -16,5 +16,10 @@ namespace Menu_General1.Forms
         {
             InitializeComponent();
         }
+
+        private void BTNMOSTRAR_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
